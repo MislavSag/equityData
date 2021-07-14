@@ -6,10 +6,11 @@ Author: Mislav Sagovac
 Maintainer: The package maintainer <mislav.sagovac@contentio.biz>
 Description: Download and web scrap data on usa equities.
     Get earning announcement data, earning transcripts, ...
-License: GLP
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 Imports:
   data.table,
-  httr
+  httr,
+  AzureStor

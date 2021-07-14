@@ -17,6 +17,3 @@ Result of GET request
 \description{
 Get data fro FMP cloud using API v3.
 }
-\examples{
-fmpv3_path("earning_calendar", from = Sys.date() - 5, to = Sys.date(), apikey = Sys.getenv("APIKEY-FMPCLOUD"))
-}

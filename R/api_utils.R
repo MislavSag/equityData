@@ -6,15 +6,14 @@
 #' @import httr
 #' @import data.table
 #' @return Result of GET request
-#' @examples
-#' fmpv3_path("earning_calendar", from = Sys.date() - 5, to = Sys.date(), apikey = Sys.getenv("APIKEY-FMPCLOUD"))
+#' @export
 fmpv3_path <- function(path = "earning_calendar", ...) {
 
   # query params
   query_params <- list(...)
 
   # define url
-  url <- paste0(url_fmp_v3, path)
+  url <- paste0("https://financialmodelingprep.com/api/v3/", path)
 
   # get data
   p <- GET(url, query = query_params)
@@ -22,4 +21,3 @@ fmpv3_path <- function(path = "earning_calendar", ...) {
 
   return(result)
 }
-

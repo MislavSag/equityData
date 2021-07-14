@@ -7,8 +7,9 @@
 get_earning_announcements(
   start_date = Sys.Date() - 1,
   end_date = Sys.Date(),
-  apikey = Sys.getenv("APIKEY-FMPCLOUD"),
-  local_file = NA
+  local_file = NA,
+  blob_file = "earning-calendar.rds",
+  update = TRUE
 )
 }
 \arguments{
@@ -16,16 +17,17 @@ get_earning_announcements(
 
 \item{end_date}{End date}
 
-\item{apikey}{Fmp cloud API key}
+\item{local_file}{Path to local file. Use only if you want to save file localy.}
 
-\item{local_file}{PPth to local file. Use only if you want to save file localy.}
+\item{blob_file}{Name of blob file}
+
+\item{update}{Should existing file be updated.}
+
+\item{apikey}{Fmp cloud API key}
 }
 \value{
 Result of GET request
 }
 \description{
 Get earnings announcements data from FMP cloud
-}
-\examples{
-fmpv3_path("earning_calendar", from = Sys.date() - 5, to = Sys.date(), apikey = Sys.getenv("APIKEY-FMPCLOUD"))
 }
