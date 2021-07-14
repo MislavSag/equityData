@@ -7,9 +7,8 @@
 get_earning_announcements(
   start_date = Sys.Date() - 1,
   end_date = Sys.Date(),
-  local_file = NA,
-  blob_file = "earning-calendar.rds",
-  update = TRUE
+  local_file = "D:/fundamental_data/earnings_announcement/earning-calendar",
+  blob_file = "earning-calendar"
 )
 }
 \arguments{
@@ -20,10 +19,6 @@ get_earning_announcements(
 \item{local_file}{Path to local file. Use only if you want to save file localy.}
 
 \item{blob_file}{Name of blob file}
-
-\item{update}{Should existing file be updated.}
-
-\item{apikey}{Fmp cloud API key}
 }
 \value{
 Result of GET request
