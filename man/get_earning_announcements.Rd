@@ -5,18 +5,15 @@
 \title{Get Earning Announcement Data}
 \usage{
 get_earning_announcements(
-  start_date = Sys.Date() - 1,
+  start_date = Sys.Date() - 10,
   end_date = Sys.Date(),
-  local_file = "D:/fundamental_data/earnings_announcement/earning-calendar",
-  blob_file = "earning-calendar"
+  blob_file = NA
 )
 }
 \arguments{
 \item{start_date}{Start date}
 
 \item{end_date}{End date}
-
-\item{local_file}{Path to local file. Use only if you want to save file localy.}
 
 \item{blob_file}{Name of blob file}
 }

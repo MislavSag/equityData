@@ -4,12 +4,24 @@
 \alias{get_blob_file}
 \title{Get File from blob}
 \usage{
-get_blob_file(file, container = "fundamentals")
+get_blob_file(
+  blob_file,
+  container = "fundamentals",
+  save_file = file.path(getwd(), file),
+  refresh_data_old = 3,
+  ...
+)
 }
 \arguments{
-\item{file}{File to import (without extensions)}
+\item{blob_file}{File to import from Azure store container}
 
 \item{container}{Blob container}
+
+\item{save_file}{File name to save object localy}
+
+\item{refresh_data_old}{Number of days after which new, refreshed data would be donwloaded fom container.}
+
+\item{...}{Other arguments to storage_download function from AzureStore pakcage}
 }
 \value{
 Result of GET request

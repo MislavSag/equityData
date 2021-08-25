@@ -13,4 +13,10 @@ RoxygenNote: 7.1.1
 Imports:
   data.table,
   httr,
-  AzureStor
+  AzureStor,
+  future.apply,
+  stringr,
+  rvest,
+  jsonlite,
+  quarks,
+  runner
