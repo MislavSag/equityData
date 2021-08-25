@@ -7,7 +7,7 @@
 get_tick_data(symbol, date)
 }
 \arguments{
-\item{symbol}{Start date}
+\item{symbol}{Stock symbol}
 
 \item{date}{End date}
 }
