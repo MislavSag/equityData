@@ -8,7 +8,7 @@ get_transcripts(
   symbols,
   years = 1992:2021,
   blob_cont = "transcripts",
-  overwrite_existing_files = FALSE
+  save_files = TRUE
 )
 }
 \arguments{
@@ -18,7 +18,7 @@ get_transcripts(
 
 \item{blob_cont}{blob container}
 
-\item{overwrite_existing_files}{should existing files be overwritten}
+\item{save_files}{should transcripts be saved.}
 }
 \value{
 Result of GET request
